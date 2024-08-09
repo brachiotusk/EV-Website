@@ -13,10 +13,10 @@
 
 
 <div class="relative" style="width: {parseInt(x) + 2*strokeWidth}px; height: {parseInt(y) + 2*strokeWidth}px; --perimeter: {2*x + 2*y}; --stroke-width: {strokeWidth}">
-    <svg class="absolute top-0 left-0" height={x+strokeWidth*2} width={y+strokeWidth*2}>
-        <rect class="transition-all cubic-in shape duration-1000" style="{!domLoaded ? "stroke-dasharray: 0 var(--perimeter);" : ""}" x={strokeWidth} y={strokeWidth} height={x} width={y} rx={rounded} ry={rounded}></rect>
+    <svg class="absolute top-0 left-0" width={parseInt(x) + strokeWidth*2} height={parseInt(y) + strokeWidth*2}>
+        <rect class="ease-out duration-[3s] shape" style="{!domLoaded ? "stroke-dasharray: 0 var(--perimeter);" : ""}" x={strokeWidth} y={strokeWidth} width={x} height={y} rx={rounded} ry={rounded}></rect>
     </svg>
-    <div class="flex justify-center text-center w-full h-full flex-col">
+    <div class="flex justify-center text-center w-full h-full flex-col z-10 relative">
         <slot/>
     </div>
 </div>
@@ -26,15 +26,16 @@
 
     .shape {
         fill-opacity: 0;
-        stroke: yellow;
+        stroke: #F4c032;
         stroke-width: var(--stroke-width);
         stroke-dasharray: var(--perimeter);
-        stroke-linejoin: round;
+        stroke-linecap: square;
+        transition-property: all;
         
     }
 
-    .shape:hover {
+    /*.shape:hover {
         stroke-dashoffset: 0;
         stroke-dasharray: var(--perimeter);
-    }
+    }*/
 </style>
