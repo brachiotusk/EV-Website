@@ -3,7 +3,11 @@ module.exports = {
     darkMode: 'media',
     content: ["./src/**/*.{html,js,svelte}"],
     theme: {
-      extend: {},
+      extend: {
+        colors: {
+          'evyellow': '#F4C032',
+        }
+      },
     },
     plugins: [],
   }
