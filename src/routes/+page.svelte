@@ -30,15 +30,15 @@
     <Header></Header>
     {#if domLoaded}
         <div style="background-image: linear-gradient(to right, #F4C032, #FF8800);">
-            <div class="relative w-1/2 mx-auto mt-10 text-black flex lg:flex-row flex-col" >
-                <div on:introstart={setLoaded} transition:fly={{x: -300, duration: 1000, easing: cubicOut }} class="mt-[10%] text-xl z-10 max-w-60">
+            <div class="relative mx-3 lg:w-1/2 lg:mx-auto mt-10 text-black flex lg:flex-row flex-col" >
+                <div on:introstart={setLoaded} transition:fly={{x: -300, duration: 1000, easing: cubicOut }} class="mt-[10%] text-xl z-10 lg:max-w-60">
                     <h1 class="text-3xl font-bold">Innovating for the Future.</h1>
-                    <hr class="border-black border-t-2 transition-all delay-[400ms] duration-1000 {firstUpdate ? "w-1/3" :"w-0"} mb-4">
+                    <hr class="border-black border-t-2 transition-all delay-[400ms] duration-1000 {firstUpdate ? "w-1/5 lg:w-1/3" :"w-0"} mb-4">
                     With a long-standing history of success, our team is always innovating, whether it is
                     our unique Differential Swerve drive or our custom 3d-printed designs.
                 </div>
                 <div>
-                    <img src="{base}/evcsrobo.png" alt="robot" class="max-h-[40em] -z-20"/>
+                    <img src="{base}/evcsrobo.png" alt="robot" class="max-h-[40em] -z-20 mx-auto lg:mx-0"/>
                     <!-- <div transition:fly={{x: -300, duration: 1000, easing: cubicOut }} class="absolute top-0 left-0 w-[100%] h-full" style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent);"></div> -->
                 </div>
             </div>
