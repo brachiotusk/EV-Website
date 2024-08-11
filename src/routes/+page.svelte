@@ -28,7 +28,6 @@
 <div class="text-black dark:text-white">
     <!-- Header (todo) -->
     <Header></Header>
-    <div class="text-center mt-[1em]"><h1 class="text-3xl text-black font-semibold">Escape Velocity</h1></div>
     {#if domLoaded}
         <div style="background-image: linear-gradient(to right, #F4C032, #FF8800);">
             <div class="relative w-1/2 mx-auto mt-10 text-black flex flex-row" >

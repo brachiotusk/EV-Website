@@ -6,6 +6,7 @@ module.exports = {
       extend: {
         colors: {
           'evyellow': '#F4C032',
+          'evorange': '#FF8800',
         }
       },
     },
