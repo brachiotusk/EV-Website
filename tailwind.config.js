@@ -1,3 +1,5 @@
+const colors = require("tailwindcss/colors");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     darkMode: 'media',
@@ -7,8 +9,21 @@ module.exports = {
         colors: {
           'evyellow': '#F4C032',
           'evorange': '#FF8800',
+        },
+        transitionProperty: {
+          'width': 'width, stroke-width, border-width'
         }
       },
+      colors: {
+          'white': colors.white,
+          'black': colors.neutral[800],
+          'transparent': "transparent",
+          'neutral': {
+            800: colors.neutral[800]
+          }
+
+
+      }
     },
     plugins: [],
-  }
+  } 
