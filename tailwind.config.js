@@ -11,16 +11,14 @@ module.exports = {
           'evorange': '#FF8800',
         },
         transitionProperty: {
-          'width': 'width, stroke-width, border-width'
+          'width': 'width, stroke-width, border'
         }
       },
       colors: {
           'white': colors.white,
           'black': colors.neutral[800],
           'transparent': "transparent",
-          'neutral': {
-            800: colors.neutral[800]
-          }
+          'neutral': colors.neutral,
 
 
       }

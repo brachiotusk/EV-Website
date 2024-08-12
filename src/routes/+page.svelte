@@ -29,7 +29,7 @@
     <Header></Header>
     {#if domLoaded}
         <div style="background-image: linear-gradient(to right, #F4C032, #FF8800);">
-            <div class="relative mx-3 lg:max-w-6xl lg:mx-auto mt-10 text-black flex lg:flex-row flex-col lg:justify-center" >
+            <div class="relative mx-3 md:max-w-3xl lg:max-w-6xl md:mx-auto mt-4 text-black flex lg:flex-row flex-col lg:justify-center" >
                 <div on:introstart={setLoaded} transition:fly={{x: -300, duration: 1000, easing: cubicOut }} class="mt-[10%] text-xl z-10 lg:max-w-md px-[1em]">
                     <h1 class="text-3xl font-bold">Innovating for the Future.</h1>
                     <hr class="border-black border-t-2 transition-width delay-[400ms] duration-1000 {firstUpdate ? "w-[6em]" :"w-0"} my-2">
@@ -44,9 +44,9 @@
         </div>
         
     
-        <div transition:fly={{x: 30, duration: 1000}} class="flex items-center align-middle flex-col justify-center text-center w-2/3 mx-auto mt-6 max-w-6xl">
+        <div transition:fly={{x: 30, duration: 1000}} class="flex items-center align-middle flex-col justify-center text-center mx-auto mt-6 max-w-6xl">
             <h1 class="text-2xl font-bold">Who We Are</h1>
-            <hr class="border-black dark:border-white my-2 border-t-2 transition-width duration-1000 delay-[1s] {!firstUpdate? "w-0" : "w-1/5"}">
+            <hr class="border-black dark:border-white my-2 border-t-2 transition-width duration-1000 delay-[1s] {!firstUpdate? "w-0" : "w-[5em]"}">
             We are 14343 Escape Velocity, an 8 person FIRST® Tech Challenge team from Bellevue, Washington.
         </div>
     {/if}
