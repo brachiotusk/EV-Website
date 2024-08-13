@@ -1,4 +1,5 @@
 <script>
+    import PageWrapper from "../lib/PageWrapper.svelte";
     import { fade, fly, scale } from "svelte/transition";
     import { afterUpdate, onMount } from "svelte";
     import { cubicIn, cubicInOut, cubicOut, elasticIn, elasticInOut, quintIn } from "svelte/easing";
@@ -43,11 +44,14 @@
             </div>
         </div>
         
-    
-        <div transition:fly={{x: 30, duration: 1000}} class="flex items-center align-middle flex-col justify-center text-center mx-auto mt-6 max-w-6xl">
-            <h1 class="text-2xl font-bold">Who We Are</h1>
-            <hr class="border-black dark:border-white my-2 border-t-2 transition-width duration-1000 delay-[1s] {!firstUpdate? "w-0" : "w-[5em]"}">
-            We are 14343 Escape Velocity, an 8 person FIRST® Tech Challenge team from Bellevue, Washington.
+        <div transition:fly={{x: 30, duration: 1000}}>
+            <PageWrapper>
+                
+                <h1 class="text-2xl font-bold">Who We Are</h1>
+                <hr class="border-black dark:border-white my-2 border-t-2 transition-width duration-1000 delay-[1s] {!firstUpdate? "w-0" : "w-[5em]"}">
+                We are 14343 Escape Velocity, an 8 person FIRST® Tech Challenge team from Bellevue, Washington.
+            
+            </PageWrapper>
         </div>
     {/if}
     

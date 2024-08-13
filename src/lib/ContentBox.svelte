@@ -26,7 +26,7 @@
 
     .shape {
         fill-opacity: 0;
-        stroke: #F4c032;
+        stroke: var(--stroke-color);
         stroke-width: var(--stroke-width);
         stroke-dasharray: var(--perimeter);
         stroke-linecap: square;
