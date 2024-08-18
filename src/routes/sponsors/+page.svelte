@@ -1,9 +1,9 @@
 <script>
-    import ExpandingHr from "../../lib/ExpandingHR.svelte";
-    import Header from "../../lib/Header.svelte";
-    import PageWrapper from "../../lib/PageWrapper.svelte";
+    import ExpandingHr from "../../lib/common/ExpandingHR.svelte";
+    import Header from "../../lib/layout/Header.svelte";
+    import PageWrapper from "../../lib/common/PageWrapper.svelte";
     import { base } from "$app/paths";
-    import SponsorBox from "../../lib/SponsorBox.svelte";
+    import SponsorBox from "../../lib/sponsors/SponsorBox.svelte";
 
 </script>
 <Header/>

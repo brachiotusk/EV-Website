@@ -1,11 +1,11 @@
 <script>
-    import PageWrapper from "../lib/PageWrapper.svelte";
+    import PageWrapper from "../lib/common/PageWrapper.svelte";
     import { fade, fly, scale } from "svelte/transition";
     import { afterUpdate, onMount } from "svelte";
     import { cubicIn, cubicInOut, cubicOut, elasticIn, elasticInOut, quintIn } from "svelte/easing";
-    import ContentBox from "../lib/ContentBox.svelte";
+    import ContentBox from "../lib/common/ContentBox.svelte";
     import { base } from "$app/paths";
-    import Header from "../lib/Header.svelte";
+    import Header from "../lib/layout/Header.svelte";
 
     let domLoaded = false;
     let firstUpdate = false;

@@ -1,7 +1,7 @@
 <script>
-    import ExpandingHr from "../../lib/ExpandingHR.svelte";
-    import Header from "../../lib/Header.svelte";
-    import PageWrapper from "../../lib/PageWrapper.svelte";
+    import ExpandingHr from "../../lib/common/ExpandingHR.svelte";
+    import Header from "../../lib/layout/Header.svelte";
+    import PageWrapper from "../../lib/common/PageWrapper.svelte";
 
 </script>
 <Header></Header>

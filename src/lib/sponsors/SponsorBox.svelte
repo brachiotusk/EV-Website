@@ -9,7 +9,7 @@
     <h1 class="text-3xl font-semibold mb-2">{name}</h1>
     <div class="flex justify-between items-center align-middle h-full mx-4 mb-4 max-h-[calc(100%-3.75rem)]">
         <img src={src} alt={name} class="max-h-full lg:h-full rounded-xl p-2" style="background-color: var(--background-color); transform: translateX(var(--offset));"/>
-        <a href={href}>
+        <a href={href} class="hidden md:block">
             <svg width=50 height=50 class="hidden md:block -translate-y-[calc(1.825rem-15px)] transition duration-500 hover:scale-150 hover:text-evyellow">
                 <path d="M 0 0 L 25 25 L 0 50" fill="transparent" stroke="currentColor" stroke-width=4/>
                 <path d="M 10 0 L 35 25 L 10 50" fill="transparent" stroke="currentColor" stroke-width=4/>
