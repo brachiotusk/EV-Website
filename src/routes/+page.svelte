@@ -38,7 +38,7 @@
                     our unique Differential Swerve drive or our custom 3d-printed designs.
                 </div>
                 <div>
-                    <img src="{base}/evcsrobo.png" alt="robot" class="max-h-[40em] -z-20 mx-auto lg:mx-0"/>
+                    <img src="{base}/evcsrobo.png" alt="The Escape Velocity CENTERSTAGE robot." class="max-h-[40em] -z-20 mx-auto lg:mx-0"/>
                     <!-- <div transition:fly={{x: -300, duration: 1000, easing: cubicOut }} class="absolute top-0 left-0 w-[100%] h-full" style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent);"></div> -->
                 </div>
             </div>

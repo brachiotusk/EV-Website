@@ -5,15 +5,30 @@
     import { base } from "$app/paths";
     import LinkChip from "../common/LinkChip.svelte";
     import MobileNavbar from "./MobileNavbar.svelte";
+    import { flip } from "svelte/animate";
 
     let domLoaded = false;
     let firstUpdate = false;
     let showNavbar = false;
     let animOver = false;
+    let currentMenu = "main";
 
     onMount(() => domLoaded = true)
 
     let toggleNavbar = function() {showNavbar = !showNavbar;}
+
+    const headerLinks = [
+        { name: "Home", menus: ["main"], href: "/" },
+        { name: "About Us", menus: ["main"], href: "/about"},
+        { name: "Seasons", menus: ["main"], func: () => currentMenu = "seasons"},
+        { name: "Sponsors", menus: ["main"], href: "/sponsors" },
+        { name: "Contact Us", menus: ["main"], href: "/contact" },
+        { name: `<span aria-label="Back">\<\<</span>`, menus: ["seasons"], func: () => currentMenu = "main"},
+        { name: "Freight Frenzy", menus: ["seasons"], href: "/freightfrenzy"},
+        { name: "Powerplay", menus: ["seasons"], href: "/powerplay"},
+        { name: "CENTERSTAGE", menus: ["seasons"], href: "/centerstage"},
+        { name: "Into the Deep", menus: ["seasons"], href: "/intothedeep"}
+    ];
 </script>
 
 {#if domLoaded}
@@ -30,12 +45,20 @@
         </div>
         
         <div class="items-center text-center text-black font-semibold text-xl w-full h-full hidden lg:flex justify-evenly">
-            <LinkChip href="{base}/">Home</LinkChip>
-            <LinkChip href="{base}/about">About Us</LinkChip>
-            <LinkChip href="{base}/CENTERSTAGE">CENTERSTAGE</LinkChip>
-            <LinkChip href="{base}/POWERPLAY">POWERPLAY</LinkChip>
-            <LinkChip href="{base}/sponsors">Sponsors</LinkChip>
-            <LinkChip href="{base}/contact">Contact Us</LinkChip>
+            {#each headerLinks.filter((link) => link.menus.includes(currentMenu)) as link (link.name)}
+                <div animate:flip={{ duration: 1000 }} out:fly={{x: currentMenu == "main" ? "-50vw" : "50vw", opacity: 1, duration: 1000}} in:fly={{x: currentMenu == "main" ? "-50vw" : "50vw", opacity: 1, duration: 1000}}  style="clip-path: polygon(0% 50%, 20% 100%, 80% 100%, 100% 50%, 80% 0%, 20% 0%)" class="bg-evyellow hover:bg-evorange transition duration-500 hover:scale-125 py-2 px-4">
+                    {#if link.href}
+                    <a href={link.href}>
+                        {@html link.name}
+                    </a>
+                    {:else}
+                    <button type="button" on:click={() => link.func()}>
+                        {@html link.name}
+                    </button>
+                    {/if}
+                </div>
+            {/each}
+                
         </div>
         <!-- <div class=" hidden absolute top-0 left-full border-t-transparent border-l-evyellow border-t-[3em] border-l-[2em] {firstUpdate ? "" : "-translate-x-2"} transition-all duration-1000 -z-20"></div> -->
     </div>
