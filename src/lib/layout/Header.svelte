@@ -48,7 +48,7 @@
             {#each headerLinks.filter((link) => link.menus.includes(currentMenu)) as link (link.name)}
                 <div animate:flip={{ duration: 1000 }} out:fly={{x: currentMenu == "main" ? "-50vw" : "50vw", opacity: 1, duration: 1000}} in:fly={{x: currentMenu == "main" ? "-50vw" : "50vw", opacity: 1, duration: 1000}}  style="clip-path: polygon(0% 50%, 20% 100%, 80% 100%, 100% 50%, 80% 0%, 20% 0%)" class="bg-evyellow hover:bg-evorange transition duration-500 hover:scale-125 py-2 px-4">
                     {#if link.href}
-                    <a href={link.href}>
+                    <a href={base + link.href}>
                         {@html link.name}
                     </a>
                     {:else}
