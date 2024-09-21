@@ -18,6 +18,7 @@
         <li>Innaias, 11th Grade</li>
         <li>Erwin, 10th Grade</li>
         <li>Aaryan, 8th Grade</li>
+        <li>Shaurya, 7th Grade</li>
     </ul>
 
     <b class="mt-4  text-xl">Programming</b>
