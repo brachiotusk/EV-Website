@@ -11,11 +11,13 @@
     <ExpandingHr --width=10em/>
 
     <h2 class="text-xl">Season Statistics</h2><br>
-    <div class="flex w-2/3 justify-evenly align-middle content-center items-center">
+    <div class="flex flex-col md:flex-row w-full h-full md:w-2/3 justify-evenly align-middle content-center items-center">
         <StatBox number=70.56 truncateDecimals=2 duration=3000 statisticName="<small>(Top 81%)</small>">OPR</StatBox>
-        <div class="w-0 h-16 border-white border-l-[2px]"></div>
+        <div class="md:hidden"><ExpandingHr --width=15em/></div>
+        <div class="w-0 h-16 hidden md:block border-white border-l-[2px]"></div>
         <StatBox number=2 truncateDecimals=0 duration=3000 statisticName="<small>teams in the world with Differential Swerve</small>">One of</StatBox>
-        <div class="w-0 h-16 border-white border-l-[2px]"></div>
+        <div class="md:hidden"><ExpandingHr --width=15em/></div>
+        <div class="w-0 h-16 hidden md:block border-white border-l-[2px]"></div>
         <StatBox number=4 truncateDecimals=0 duration=3000 statisticName="<small>Autonomous</small>">2+</StatBox>
     </div><br>
     <p>Our 2023-2024 CENTERSTAGE campaign went through two major iterations, dozens of subsystem iterations, and many different minor tweaks and
