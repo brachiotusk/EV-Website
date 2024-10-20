@@ -25,10 +25,10 @@
         { name: "Sponsors", menus: ["main"], href: "/sponsors" },
         { name: "Contact Us", menus: ["main"], href: "/contact" },
         { name: `<span aria-label="Back">\<\<</span>`, menus: ["seasons"], func: () => currentMenu = "main"},
-        { name: "Freight Frenzy", menus: ["seasons"], href: "/freightfrenzy"},
-        { name: "Powerplay", menus: ["seasons"], href: "/powerplay"},
+        { name: "Into the Deep", menus: ["seasons"], href: "/intothedeep"},
         { name: "CENTERSTAGE", menus: ["seasons"], href: "/centerstage"},
-        { name: "Into the Deep", menus: ["seasons"], href: "/intothedeep"}
+        { name: "powerplay", menus: ["seasons"], href: "/powerplay"},
+        { name: "Freight Frenzy", menus: ["seasons"], href: "/freightfrenzy"}
     ];
 
     let thingWidth = 1.5;
