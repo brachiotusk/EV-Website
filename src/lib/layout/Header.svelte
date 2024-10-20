@@ -28,7 +28,7 @@
         { name: "Into the Deep", menus: ["seasons"], href: "/intothedeep"},
         { name: "CENTERSTAGE", menus: ["seasons"], href: "/centerstage"},
         { name: "Power Play", menus: ["seasons"], href: "/powerplay"},
-        { name: "Freight Frenzy", menus: ["seasons"], href: "EV-Website/freightfrenzy"}
+        { name: "Freight Frenzy", menus: ["seasons"], href: "/freightfrenzy"}
     ];
 
     let thingWidth = 1.5;
