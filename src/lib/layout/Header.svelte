@@ -20,7 +20,7 @@
 
     const headerLinks = [
         { name: "Home", menus: ["main"], href: "/" },
-        { name: "About Us", menus: ["main"], href: "/about"},
+        { name: "About Us", menus: ["main"], href: "{base}/about"},
         { name: "Seasons", menus: ["main"], func: () => currentMenu = "seasons"},
         { name: "Sponsors", menus: ["main"], href: "/sponsors" },
         { name: "Contact Us", menus: ["main"], href: "/contact" },
