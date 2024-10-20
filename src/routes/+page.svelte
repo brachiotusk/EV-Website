@@ -32,10 +32,10 @@
         <div style="background-image: linear-gradient(to right, #F4C032, #FF8800);">
             <div class="relative mx-3 md:max-w-3xl lg:max-w-6xl md:mx-auto mt-4 text-black flex lg:flex-row flex-col lg:justify-center" >
                 <div on:introstart={setLoaded} transition:fly={{x: -300, duration: 1000, easing: cubicOut }} class="mt-[10%] text-xl z-10 lg:max-w-md px-[1em]">
-                    <h1 class="text-3xl font-bold">Innovating for the Future.</h1>
+                    <h1 class="text-3xl font-bold">Escape Velocity Robotics</h1>
                     <hr class="border-black border-t-2 transition-width delay-[400ms] duration-1000 {firstUpdate ? "w-[6em]" :"w-0"} my-2">
                     With a long-standing history of success, our team is always innovating, whether it is
-                    our unique Differential Swerve drive or our custom 3d-printed designs.
+                    our unique Differential Swerve drive or our custom 3d-printed designs. Our Mission is to bring everyone we can into the Digital Age through access to technology and promotion of STEM.
                 </div>
                 <div>
                     <img src="{base}/evcsrobo.png" alt="The Escape Velocity CENTERSTAGE robot." class="max-h-[40em] -z-20 mx-auto lg:mx-0"/>
