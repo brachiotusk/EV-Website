@@ -27,7 +27,7 @@
         { name: `<span aria-label="Back">\<\<</span>`, menus: ["seasons"], func: () => currentMenu = "main"},
         { name: "Into the Deep", menus: ["seasons"], href: "/intothedeep"},
         { name: "CENTERSTAGE", menus: ["seasons"], href: "/centerstage"},
-        { name: "Power Play", menus: ["seasons"], href: "/powerplay"},
+        { name: "Power Play", menus: ["seasons"], href: "/powerplay/+page.svelte"},
         { name: "Freight Frenzy", menus: ["seasons"], href: "/freightfrenzy"}
     ];
 
