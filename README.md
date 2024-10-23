@@ -1,7 +1,8 @@
 # hi its michael here i'll write documentation later
 
 
-# turn this into a outreach yap section
+# Our Team
+For the past 4 Years, Escape Velocity has been a pillar in the northwest robotics community, working to create a larger impact throughout the globe.
 
 # turn this into a dev environment setup guide + contrib guide
 # create-svelte
